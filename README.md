@@ -1,4 +1,4 @@
-# tailwindcss-vertical-rythm
+# tailwindcss-vertical-rhythm
 
 A tailwind plugin which helps create scaling typography.
 

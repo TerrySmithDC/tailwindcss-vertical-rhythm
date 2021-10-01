@@ -1,1 +1,1 @@
-module.exports = require("./verticalRythm");
+module.exports = require("./verticalRhythm");
