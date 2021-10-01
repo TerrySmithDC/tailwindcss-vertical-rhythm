@@ -1,0 +1,24 @@
+{
+  "name": "tailwindcss-vertical-rythm",
+  "version": "0.0.1",
+  "description": "A typography tailwind plugin",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerrySmithDC/tailwindcss-vertical-rythm.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "typography"
+  ],
+  "author": "Terry Smith",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TerrySmithDC/tailwindcss-vertical-rythm/issues"
+  },
+  "homepage": "https://github.com/TerrySmithDC/tailwindcss-vertical-rythm#readme",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "tailwindcss": "^2.2.16"
+  }
+}
