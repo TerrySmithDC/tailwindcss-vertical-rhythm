@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - setup-pages-index-build
 
 jobs:
   deploy:
