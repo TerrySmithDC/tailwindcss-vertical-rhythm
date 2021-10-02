@@ -2,7 +2,7 @@
   "name": "tailwindcss-vertical-rhythm",
   "version": "0.0.1",
   "description": "A typography tailwind plugin",
-  "main": "src/index.js",
+  "npmmain": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TerrySmithDC/tailwindcss-vertical-rhythm.git"
@@ -18,7 +18,12 @@
   },
   "homepage": "https://github.com/TerrySmithDC/tailwindcss-vertical-rhythm#readme",
   "dependencies": {
-    "lodash": "^4.17.21",
-    "tailwindcss": "^2.2.16"
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.14"
   }
 }
