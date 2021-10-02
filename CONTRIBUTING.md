@@ -4,24 +4,18 @@ There are issues in the reporistory availble, mostly documentation/examples as t
 
 Keep things respectful and professional.
 
+You should likely fork the repo and make PRs from your fork.
+
 ## Making an example
 
-Create a new folder or copy an example in public
+Within the `example` folder, clone an example and rename it. From the root of the project you can run the following commands.
 
-New folder:
+- `make build folder=example-example`
 
-- `npx tailwind init`, to the new tailwind config:
-  - Add the plugin to the plugins array: `require("../../src/index.js")`
-  - Set purge to look at the index: `purge: ["index.html"],`
-  - _optional_ Set tailwind to jit, it's super fast but still early development.
-- Create a sub folder called `src`, make a `tailwind.css` file there importing the tailwind base.
-- Create an `index.html` file linking the compiled `style.css` file.
+- `make serve folder=example-example`
 
-## Commands for examples
+Replacing `example-example` with your new example folder name.
 
-cd into the example folder, you'll want to run two seperate commands.
+Add the example to the list on `public/index.html`, you must use the absolute url in the likw with that matching generated folder from the `make build` command.
 
-`npx serve .` -> Quick static site to serve the index. No live refresh.
-`npx tailwindcss -i ./src/tailwind.css -o ./style.css -w` -> Builds the source tailwind file in watch mode.
-
-### Make cool examples
+Commit the example and public files with you're pr! Examples will auto deploy on merge to `main`.
