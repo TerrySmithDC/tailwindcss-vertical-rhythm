@@ -51,9 +51,9 @@ You can extract the ones you are using in a single class in your `tailwind.css` 
 @tailwind utilities;
 
 @layer components {
-  //name of class
+  /* name of class */
   .content {
-    //css that will be applied
+    /* css that will be applied */
     @apply factor-sm factor-base factor-lg factor-xl
   }
 }
