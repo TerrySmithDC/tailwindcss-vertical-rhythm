@@ -30,7 +30,20 @@ module.exports = {
 
 ## Extracting Classes
 
-You can use a tailwind.css file for extracting classes and reuse code
+The plugin by default generates the following classes 
+
+```
+factor-xs
+factor-sm
+factor-base
+factor-lg
+factor-xl
+factor-2xl
+factor-3xl
+factor-4xl
+```
+
+You can extract the ones you are using in a single class in your `tailwind.css` file to reuse code
 
 ```css
 @tailwind base;
@@ -39,43 +52,41 @@ You can use a tailwind.css file for extracting classes and reuse code
 
 @layer components {
   //name of class
-  .blue {
+  .content {
     //css that will be applied
-    @apply py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    @apply factor-sm factor-base factor-lg factor-xl
   }
 }
 ```
-Learn more about extracting classes [here](https://tailwindcss.com/docs/extracting-components)
+
+Later you can use the class in your code which you applied in the `tailwind.css` file
+```html
+<span class="content">very useful text</span>
+```
+
+You can learn more about extracting classes [here](https://tailwindcss.com/docs/extracting-components)
 
 ## Scale options
 
-Tailwind allows you to easily scale images using `scale-*`, you can configure the tag according to your needs in the `tailwind.config.js` file we made earlier
+The plugin set's the root font-size of the site to `16px` and prefers `rem` units.
+
+You can configure this behaviour in the `tailwind.config.js` file
 
 ```js
-  module.exports = {
-    theme: {
-      scale: {
-        '0': '0',
-        '25': '.25',
-        '50': '.5',
-        '75': '.75',
-        '90': '.9',
-        '95': '.95',
-        '100': '1',
-        '105': '1.05',
-        '110': '1.1',
-        '125': '1.25',
-        '150': '1.5',
-        '200': '2',
-      }
-    }
-  }
+verticalRhythm: {
+  basePixel: 14, // Change the base unit to 14px. Pass a number not a px value
+  unit: "em"
+},
 ```
-Learn more about scale [here](https://tailwindcss.com/docs/scale)
-## Dynamic mode
-To disabled dynamic mode you can remove the following lines from your `tailwind.config.js`
-```diff
-- verticalRhythm: {
--    mode: "dynamic",
--  },
+
+# Dynamic Mode
+
+Dynamic mode enables the use of [css clamp](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()) and will scale the font size up and down depending on the vh of the device. By default the min and max are tailwind responsive theme values screens.md and screens.2xl.
+
+This can also be customized by either passing a number value (no px) or accessing the tailwind theme function in your `taildwind.config.js` file:
+```js
+verticalRhythm: {
+    maxScreen: theme("screens.lg").slice(0, -2), 
+    minScreen: theme("screens.sm").slice(0, -2)
+}
 ```
