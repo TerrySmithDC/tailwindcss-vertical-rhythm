@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .title{
+          background-color: grey;
+          color: #000;
+          padding: 30px;
+      }
+      .box{
+          background-color: gray;
+          padding: 50px;
+      }
+      .WithoutScale{
+          padding: 20px;
+          background-color: #ffff;
+          margin: 10px;
+      }
+      .Scale{
+              padding: 20px;
+              background-color: #ffff;
+              margin-top: 20px;
+              display: inline-block;
+      }
+    </style>
+    <body>
+        <p class="text-5xl text-center title">Scaling Propert Demonstration Using Tailwind Css
+            <p />
+
+        <div class="box text-center">
+            <p class="WithoutScale text-center">This is the Nrml Text Without Scaling Property</p>
+            <p class="Scale transform scale-150 text-center ">This is the text With Scaling Property</p>
+        </div>
+    </body>
+</head>
