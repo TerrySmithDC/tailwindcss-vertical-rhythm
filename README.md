@@ -1,5 +1,5 @@
 # Tailwindcss-vertical-rhythm.![NPM](https://img.shields.io/npm/l/tailwindcss-vertical-rhythm) ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat) ![npm bundle size](https://img.shields.io/bundlephobia/min/lodash)
-
+![minified_size](https://badgen.net/badge/color/pink/pink)
 A tailwind plugin which helps create scaling typography. It does the CSS math so you don't have to.
 
 The term **vertical rhythm** is an old typography practice designers have been using for years, it controls the flow of a piece of media's content improving the readability of content and creating a cohesive looking design. This has become an increasingly difficult problem in the digital age with the variation of
