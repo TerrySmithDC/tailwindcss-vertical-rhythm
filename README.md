@@ -34,7 +34,7 @@ npm install -D tailwindcss-vertical-rhythm
 ## Yarn
 
 ```sh
-yarn add --sav-dev tailwindcss-vertical-rhythm
+yarn add --save-dev tailwindcss-vertical-rhythm
 ```
 
 ## PNPM
@@ -120,13 +120,13 @@ We're still dealing with a few variables which will impact the level of tuning n
 
 Every font family (and custom font faces you might be using) have different properties and are made with varying qualities. Generally fronts from the largest foundries are good but sometimes you need the ability to fine tune things to better suit the specific font. For example: Often san serif fonts benefit from a little extra line height to increase readability, especially with multiple paragraphs. The Vertical Rhythm plugin allows you to manually tune this instead of using the default in the configs. You can also create your own custom factors to be used with different fonts!
 
-**Remember that neg that spawned this whole plugin?** Out of the box, this plugin defaults to setting up the vertical rhythm of a site, but we're still suffering from fonts rendering slightly differently depending on the resolution. Using relative units like `rem` is certainly better then absolute values like `px` but we're still having accessibility and readability problems with fonts being too small on high resolution phones and super large screens.
+**Remember that neg that spawned this whole plugin?** Out of the box, this plugin defaults to setting up the vertical rhythm of a site, but we're still suffering from fonts rendering slightly differently depending on the resolution. Using relative units like `rem` is certainly better than absolute values like `px` but we're still having accessibility and readability problems with fonts being too small on high resolution phones and super large screens.
 
 Enter dynamic font scaling (AKA the dynamic mode ). A relatively new CSS feature called `clamp()` addresses this problem, it scales a value up and down between two ranges. Be default factors scale based tailwinds responsive size `screens.sm` screen size to `screens.xl`, taking account of the horizontal screen space and _scaling_ the factor up or down depending on the real estate available. At this point we're really leaving the realm of worrying about an absolute size metric for fronts and letting our chosen scale and factor focus on making sure the page is rendering beautifully.
 
 ## What about the [official Tailwind Typography plugin](https://github.com/tailwindlabs/tailwindcss-typography)?
 
-I haven't had the chance to test combining the two yet, but that plugin is great! It's meant to be a one stop shop that applies default styles to your entire site. This Vertical Rhythm plugin is less opinionated and injects less styles out of the box. It focuss only on font size, line height, and spacing around with the option to enable scaling type with the screen size. Vertical Rhythm is likely better suited for people who want less out of the boss and more control over the rendering of their fonts.
+I haven't had the chance to test combining the two yet, but that plugin is great! It's meant to be a one stop shop that applies default styles to your entire site. This Vertical Rhythm plugin is less opinionated and injects less styles out of the box. It focuses only on font size, line height, and spacing around with the option to enable scaling type with the screen size. Vertical Rhythm is likely better suited for people who want less out of the boss and more control over the rendering of their fonts.
 
 ## Why In Tailwind?
 
@@ -288,13 +288,13 @@ Values are what the defaults are set to in the `tailwind.config.js` configuratio
 
 ## Still in early development here!
 
-You can also create your own factors via Tailwind's theme functionality. In the event you want to get really into the wreeds of tuning font rendering, you can create your own custom set of factors. An individual factor is an an array which takes the factor multiplier to use + custom modifiers for the final style calculation. It is still leveraging the overall `verticalRhythm` configutation including the selected `scale`.
+You can also create your own factors via Tailwind's theme functionality. In the event you want to get really into the reeds of tuning font rendering, you can create your own custom set of factors. An individual factor is an array which takes the factor multiplier to use + custom modifiers for the final style calculation. It is still leveraging the overall `verticalRhythm` configuration including the selected `scale`.
 
 Breakdown of a custom factor:
 
 ```js
 "custom": [2 /* Factor multiplier */, {
-    lineHeightMod: 1 // Adjusts line hight calculation, useful for tunung custom font faces. (Multiplier)
+    lineHeightMod: 1 // Adjusts line height calculation, useful for tuning custom font faces. (Multiplier)
     headerSpacingBefore: 10, // Adjusts whitespace before text block (Additive)
     headerSpacingAfter: 10, // Adjusts whitespace after text block (Additive)
 } ]
