@@ -1,5 +1,5 @@
 const { scales } = require("./constants");
-const { basicValue, clampValue } = require("./utils");
+const { basicValue, clampValue, formatPxToRaw } = require("./utils");
 
 module.exports = function config({ config, theme }) {
   const basePixel = config("verticalRhythm.basePixel") || 16;
@@ -14,9 +14,9 @@ module.exports = function config({ config, theme }) {
   const clampMultiplier = config("verticalRhythm.clampMultiplier") || 2;
 
   const minScreen =
-    config("verticalRhythm.clampMin") || theme("screens.md").slice(0, -2); // theme() returns a px value so we strip the px
+    config("verticalRhythm.clampMin") || formatPxToRaw(theme("screens.md"));
   const maxScreen =
-    config("verticalRhythm.clampMax") || theme("screens.2xl").slice(0, -2);
+    config("verticalRhythm.clampMax") || formatPxToRaw(theme("screens.2xl"));
 
   const createValue =
     config("verticalRhythm.mode") === "dynamic"
@@ -31,7 +31,7 @@ module.exports = function config({ config, theme }) {
 
   let scale = scales["major third"]; // Default
   if (typeof config("verticalRhythm.scale") === "string") {
-    scale = scales[config("verticalRhythm.scale")];
+    scale = scales[config("verticalRhythm.scale").toLowerCase()];
   } else if (typeof config("verticalRhythm.scale") === "number") {
     scale = config("verticalRhythm.scale");
   }

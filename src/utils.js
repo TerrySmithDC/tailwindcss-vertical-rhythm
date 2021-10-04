@@ -61,4 +61,7 @@ function createStyles({
   };
 }
 
-module.exports = { basicValue, createStyles, clampValue };
+// theme() returns a px value so we strip the px
+const formatPxToRaw = (str) => str.slice(0, -2);
+
+module.exports = { basicValue, createStyles, clampValue, formatPxToRaw };
