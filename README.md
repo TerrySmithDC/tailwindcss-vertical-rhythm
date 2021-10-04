@@ -80,6 +80,10 @@ Example HTML:
 <h2 class="factor-lg">subheading</h2>
 <p class="factor-base">Some great content</p>
 ```
+![i](https://user-images.githubusercontent.com/74168885/135819535-343add35-1c6e-4c0b-bbbe-432dbe37a10d.png)
+
+
+
 
 # How it works
 
@@ -104,6 +108,9 @@ Ok we have a base factor and a factor one size up. The next factor up would be c
 | xl          | 1.25rem \* 1.25     | 1.5625rem        |
 | 2xl         | 1.5625rem \* 1.25   | 1.95325rem       |
 | 3xl         | 1.953125rem \* 1.25 | 2.4415625rem     |
+
+![img](https://user-images.githubusercontent.com/74168885/135819646-57285a92-0b87-45cf-a886-7c7151341396.png)
+
 
 This concept of scaling font sizes has been around for a while, and it often talked about along with grid systems (and maybe the golden ratio) back when you'd need a library to do it instead of using flexbox or grid. There's even calculators out there so you can set up your own modular scale online, however these either require you to manually manage hard coded values, use css `calc()` which can be expensive, or use a post processor like sass.
 
