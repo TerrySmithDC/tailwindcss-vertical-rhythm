@@ -1,5 +1,4 @@
-# Tailwindcss-vertical-rhythm. ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+# Tailwindcss-vertical-rhythm. ![first-timers-only](https://img.shields.io/badge/first--timers--only-friendly-yellow.svg?style=flat) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
 
 A tailwind plugin which helps create scaling typography. It does the CSS math so you don't have to.
 
