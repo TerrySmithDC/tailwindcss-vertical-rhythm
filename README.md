@@ -126,7 +126,7 @@ Enter dynamic font scaling (AKA the dynamic mode ). A relatively new CSS feature
 
 ## What about the [official Tailwind Typography plugin](https://github.com/tailwindlabs/tailwindcss-typography)?
 
-I haven't had the chance to test combining the two yet, but that plugin is great! It's meant to be a one stop shop that applies default styles to your entire site. This Vertical Rhythm plugin is less opinionated and injects less styles out of the box. It focuses only on font size, line height, and spacing around with the option to enable scaling type with the screen size. Vertical Rhythm is likely better suited for people who want less out of the boss and more control over the rendering of their fonts.
+I haven't had the chance to test combining the two yet, but that plugin is great! It's meant to be a one stop shop that applies default styles to your entire site. This Vertical Rhythm plugin is less opinionated and injects less styles out of the box. It focuses only on font size, line height, and spacing around with the option to enable scaling type with the screen size. Vertical Rhythm is likely better suited for people who want less out of the box and more control over the rendering of their fonts.
 
 ## Why In Tailwind?
 
