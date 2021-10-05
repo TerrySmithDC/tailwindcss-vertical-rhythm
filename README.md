@@ -1,4 +1,10 @@
 # Tailwindcss-vertical-rhythm
+![](https://img.shields.io/github/issues/TerrySmithDC/tailwindcss-vertical-rhythm)
+![](https://img.shields.io/github/forks/TerrySmithDC/tailwindcss-vertical-rhythm)
+![](https://img.shields.io/github/stars/TerrySmithDC/tailwindcss-vertical-rhythm)
+
+![](https://badgen.net/bundlephobia/min/react)
+![](https://badgen.net/bundlephobia/minzip/react)
 
 A tailwind plugin that helps create scaling typography. It does the CSS math so you don't have to.
 
@@ -7,9 +13,9 @@ screen sizes, pixel density ratios and changing containers give designers less c
 
 ## Features:
 
-- Modular Scaling
+- [Modular Scaling](#modularscaling)
 - Vertical Rhythm (of course)
-- Dynamic Font Scaling
+- [Dynamic Font Scaling](#dynamicfont)
 - Keeps Fonts Accessible
 - Does Not Modify Default Tailwind (caveat: it does set a font size on the `<body>` tag)
 - Highly Customizable
@@ -21,7 +27,16 @@ This plugin started as a side project focusing on typography on the web, particu
 
 ## Looking for help! Particularly in getting some hosted examples, typography is very visual! Checkout the Issues in GitHub or let me know if you end up using this plugin! 👀
 
-# Installation
+# Index
+
+1. [Installation](#installation)
+2. [Configurantion](#config)
+3. [Baisc Use](#basicuse)
+4. [How it works?](#how)
+5. [Further Configuration](#furtherconfig)
+
+
+# Installation <a id="installation"></a>
 
 You can install the library using your prefered package manager
 
@@ -43,7 +58,7 @@ yarn add --save-dev tailwindcss-vertical-rhythm
 pnpm add --save-dev tailwindcss-vertical-rhythm
 ```
 
-# Configuration
+# Configuration <a id="config"></a>
 
 Add `tailwindcss-vertical-rhythm` as a plugin in `tailwind.config.js`
 
@@ -56,7 +71,7 @@ module.exports = {
 }
 ```
 
-# Basic use
+# Basic use <a id="basicuse"></a>
 
 The plugin by default generates the following classes, you do not need to set any configs if you want to just have some easy base type styles.
 
@@ -81,7 +96,7 @@ Example HTML:
 <p class="factor-base">Some great content</p>
 ```
 
-# How it works
+# How it works <a id="how"></a>
 
 ## Thinking in factors
 
@@ -134,7 +149,7 @@ For one I LOVE building my projects in tailwind so I was already wanting to use 
 
 Tailwind users also are already used to working with utilities and restraining designs based on scales so using factors feels pretty natural integrating into a design.
 
-# Further Configuration
+# Further Configuration <a id="furtherconfig"></a>
 
 ## The Default Base Factor
 
@@ -154,7 +169,7 @@ You can configure this behaviour in the `tailwind.config.js` file:
 }
 ```
 
-# The Modular Scale
+# The Modular Scale <a id="modularscaling"></a>
 
 The plugin provides 8 scales out of the box and can accept a custom scale through configs.
 
@@ -193,7 +208,7 @@ or
 }
 ```
 
-# Dynamic Mode
+# Dynamic Mode <a id="dynamicfont"></a>
 
 Dynamic mode switches type rendering over to use dynamic font scaling while using the vertical rhythm values with the use of [css clamp](<https://developer.mozilla.org/en-US/docs/Web/CSS/clamp()>). Text will now scale linearly up and down depending on the vw of the device based on [this great CSS Tricks article by Pedro Rodriguez](https://css-tricks.com/linearly-scale-font-size-with-css-clamp-based-on-the-viewport/).
 
