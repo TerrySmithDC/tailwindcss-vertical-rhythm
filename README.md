@@ -1,4 +1,9 @@
-![GitHub forks](https://img.shields.io/github/forks/TerrySmithDC/tailwindcss-vertical-rhythm?style=social)  ![GitHub forks](https://img.shields.io/github/stars/TerrySmithDC/tailwindcss-vertical-rhythm?style=social) 
+<h2 align="center">
+<img src="https://img.shields.io/npm/v/tailwind-vertical-rhythm"> <img src="https://img.shields.io/github/forks/TerrySmithDC/tailwindcss-vertical-rhythm?style=flat">  <img src="https://img.shields.io/github/stars/TerrySmithDC/tailwindcss-vertical-rhythm?style=flat"> <img alt="license" src="https://img.shields.io/npm/l/tailwind-vertical-rhythm?style=flat">
+<img alt="npm" src="https://img.shields.io/npm/dm/tailwind-vertical-rhythm">
+  <img alt="GitHub Hacktoberfest combined status" src="https://img.shields.io/github/hacktoberfest/2021/TerrySmithDC/tailwindcss-vertical-rhythm">
+</h2>
+
 
 # Tailwindcss-vertical-rhythm
 
