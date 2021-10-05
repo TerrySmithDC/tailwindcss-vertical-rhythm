@@ -1,4 +1,5 @@
-https://badgen.net/badge/:subject/:status/:color?icon=github
+![GitHub forks](https://img.shields.io/github/forks/TerrySmithDC/tailwindcss-vertical-rhythm?style=social)  ![GitHub forks](https://img.shields.io/github/stars/TerrySmithDC/tailwindcss-vertical-rhythm?style=social) 
+
 # Tailwindcss-vertical-rhythm
 
 A tailwind plugin that helps create scaling typography. It does the CSS math so you don't have to.
